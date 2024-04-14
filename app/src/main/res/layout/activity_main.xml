@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/my_white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/page_title"
+            android:text="Notes"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            />
+
+        <ImageButton
+            android:id="@+id/menu_main"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:scaleType="fitCenter"
+            android:background="@color/my_white"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+
+
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTop"
+        android:layout_marginTop="25dp"
+        >
+
+
+        <EditText
+            android:id="@+id/edt_find_main"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:hint="Type here to search"
+            android:background="@drawable/rounded_coner"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+
+
+            />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rcv_list_node_main"
+        android:layout_below="@+id/layout_sec"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+
+
+    <ImageView
+        android:id="@+id/iv_addNote_main"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/add"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+
+        />
+
+
+</RelativeLayout>
